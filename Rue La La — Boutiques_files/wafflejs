@@ -1,0 +1,28 @@
+(function(){
+  var FLAGS = {
+    
+    },
+    SWITCHES = {
+    'stillwantit_switch': true,'social_bar_switch': true,'social_login_switch': true,'invite_door_switch': true,'coexistence_debug_switch': false,'paypal_switch': true,'vme_switch': false,'gift_cards': true,'smartapp_banners': true,'brighttag_switch': true,'extended_holiday_returns': true,'optimizely_switch': true,'jira_collector_switch': false,'cart_sync_to_rue1': false,'show_unsorted_boutiques': true,'trim_product_group_name': true,'guaranteed_delivery': false,'show_gifts': true,'allow_unsupported_browsers': false,'mobile_app_download_page': true,'newrelic_custom_attributes': true,'gift_messaging_toggle': false,'member_importer_make_oms_calls': true,'social_no_password_reg': false,'edialog_pref_switch': true,'show_todays_fix': true,'enable_inventory_upgrade': true,'enable_data_tracker': false,'promotions': true,'enable_bi_logger': true,'enable_tealium': true,'include_inventory_count_in_index': true,'masterpass_switch': true,'et_product_invite_email': true,'enable_braintree': true,'api_deprecation': true,'index_sku_objects': true,'et_email_prefs': true,'enable_spotlight': true,'et_email_invite': true,'et_your_friend_shopped_invite': false,'elastic_plp_enabled': true,'elastic_plp_enabled_in_preview': false,'ga_sitespeed_switch': true,'enable_ios_app_timing': true,'enable_mobile_paypal': false,'metrics_recording': true,'enable_apple_pay': true,'enable_mobile_legacy_order_detail': false,'enable_android_ipi_productlist': false,'et_email_forgot_pwd': true,'enable_preview_index_taskworker': false,'enable_castle': true,'enable_celerymonitor_redis_backend': true,'versioned_orders_endpoint': true,'enable_borderfree': true,'enable_applepay_web': true
+    },
+    SAMPLES = {
+    
+    };
+  window.waffle = {
+    "flag_is_active": function waffle_flag(flag_name) {
+      
+      return !!FLAGS[flag_name];
+    },
+    "switch_is_active": function waffle_switch(switch_name) {
+      
+      return !!SWITCHES[switch_name];
+    },
+    "sample_is_active": function waffle_sample(sample_name) {
+      
+      return !!SAMPLES[sample_name];
+    },
+    "FLAGS": FLAGS,
+    "SWITCHES": SWITCHES,
+    "SAMPLES": SAMPLES
+  };
+})();

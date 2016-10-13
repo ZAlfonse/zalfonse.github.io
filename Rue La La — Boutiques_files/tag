@@ -1,0 +1,16 @@
+BrightTag.site('yZPNMOj',function(s){
+s.events.bind('new member',window,'DIRECT/brightTag_NewMember',{pageId:416384}).dbe('signaluserid','rll.currentMember.getRue1AppId()');
+s.when('(document.getElementsByTagName(\x27html\x27)[0].className.indexOf(\x27lt-640\x27) \x3e -1 \x26\x26 document.getElementsByTagName(\x27html\x27)[0].className.indexOf(\x27no-mobile\x27) \x3d\x3d -1)',function(){
+s.events.on('new member').fire(1448956);
+});
+s.when('(document.getElementsByTagName(\x27html\x27)[0].className.indexOf(\x27gt-640\x27) \x3e -1 \x26\x26 document.getElementsByTagName(\x27html\x27)[0].className.indexOf(\x27no-mobile\x27) \x3d\x3d -1) || (document.getElementsByTagName(\x27html\x27)[0].className.indexOf(\x27no-mobile\x27) \x3e -1 \x26\x26 document.getElementsByTagName(\x27html\x27)[0].className.indexOf(\x27no-desktop\x27) \x3d\x3d\x3d -1)',function(){
+s.events.on('new member').fire(1457853);
+});
+s.events.on('new member').fire(2003703);
+s.domready(function(){
+s.tag('\x3cscript\x3e\n\nsetTimeout(function(){\n    if(jQuery(\x27#zone_modal\x27).find(\x22div[data-cms-zone\x3d\x27registration-welcome\x27]\x22).length \x3e 0 || window.suppressTealiumRegEvent){\n    $(window).trigger(\x27brightTag_NewMember\x27);\n    console.log(\x27System Tag -- js only\x27);\n}\n    \n}, 4000);\n\x3c/script\x3e',{tagId:1479611});
+s.secondary(function(c){
+c.when('jQuery(\x27#zone_modal\x27).find(\x22div[data-cms-zone\x3d\x27registration-welcome\x27]\x22).length \x3e 0').fire(1413659);
+});
+});
+});
